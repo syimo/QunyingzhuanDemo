@@ -60,6 +60,9 @@ public class MaxLineLayout extends ViewGroup {
 
             //子view 宽高
             int childWidth = child.getMeasuredWidth() + mLP.leftMargin + mLP.rightMargin;
+
+            Log.e(TAG, "onMeasurechildWidth===" +  child.getMeasuredWidth());
+
             total_child_width += childWidth;
             if (total_child_width <= total_width) {
                 max_child_size++;
